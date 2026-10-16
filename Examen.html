@@ -260,66 +260,78 @@
 </section>
 
 
-<section id="Lotes" class="py-5 bg-light">
+<section id="Lotes" class="py-5 bg-white border-top border-bottom">
     <div class="container py-lg-4">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-                <h3 class="text-center mb-5">Cotiza tu lote</h3>
-                <p></p>
+            <div class="col-12 col-lg-8 text-center mb-5">
+                <h3>Haz tu cotizacion</h3>
+                <p>Calculadora de pedidos</p>
+
+            <div class="col-12 col-md-6">
+                <i class="text-muted">Politica del taller:Descuento Institucional del 12% a partir de 10 piezas</i>
             </div>
 
-            <form>
-                <div>
-                    <div>
-                    <div>
-                        <div>
-                        <div>
-                        <input type="number" class="numero" id="numero" required>
-                        <label>Unidades a cotizar</label>
+                
+            </div>
+
+            <form action="#Lotes" method="post">
+                <div class="row g-3">
+
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <input type="number" class="form-control border-primary border-opacity-25" id="numero" required>
+                            <label for="Unidades" class="text-muted">Unidades a cotizar</label>
                         </div>
                     </div>
 
-                    
-                        <div>
-                        <select id="campo-form">
-                            <option disable selected>Seleccione</option>
-                            <option>Pupitre universitario L1290 </option>
-                            <option>Silla Ergonomica L4800</option>
-                            <option>Escritorio Ejecutivo en Caoba</option>
-                        </select>
-                        <label>Tipo de mueble</label>
+                    <div class="col-12 col-md-6">
+                        <div class="form-floating">
+                            <select id="campo-form" class="form-select border-primary border-opacity-25">
+                                <option disable selected>Seleccione</option>
+                                <option>Pupitre universitario L1290 </option>
+                                <option>Silla Ergonomica L4800</option>
+                                <option>Escritorio Ejecutivo en Caoba L5000</option>
+                            </select>
+                            <label for="tipo" class="text-muted">Tipo de mueble</label>
                         </div>
                     </div>
   
 
-                     <div>
-                        <div>
-                        <select id="campo-form">
+                     <div class="col-12 col-md-6">
+                        <div class="form-floating">
+                        <select id="campo-form" class="form-select border-primary border-opacity-25">
                             <option disable selected>Seleccione</option>
                             <option>Siguatepeque L300</option>
-                            <option>Tegucigalpa L300</option>
-                            <option>San Pedro Sula L300</option>
+                            <option>Tegucigalpa L800</option>
+                            <option>San Pedro Sula L600</option>
                         </select>
-                        <label>Destino y flete</label>
+                        <label for="Destino" class="text-muted">Destino y flete</label>
                         </div>
                     </div>
                     
                 </div>
-                <div>
-                    <button type="submit">Calcular Presupuesto</button>   
+                <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-secondary btn-lg rounded-pill fw-bold w-100 shadow">Calcular Presupuesto</button>   
                 </div>
+            
+
+                <div class="col-12 text-center mt-4">
+                        <div class="panel-salida">
+                            <h5>Panel de salida</h5>
+                            El costo estimado de su pedido es de L.00.000
+                        </div>
+                </div>
+                
                     
             </form>
 
-            <div>
-            <i>Descuento Institucional del 12%</i>
-            </div>
+            
         </div>
     </div>
 </section>
 
 
-<section id="tabla">
+<section id="tabla" class="py-5 bg-white border-top border-bottom">
     <div>
         <div>
             <div>
@@ -394,50 +406,50 @@
 
 
 
-<section class="Formulario">
-    <div>
-        <div>
-            <div>
+<section class="Formulario" class="py-5 bg-light">
+    <div class="container py-lg-4">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 text-center mb-5">
                 <h3>Cotizaciones y Licitaciones</h3>
                 <p>Para poder realizar una cotizacion o licitacion rellene el formulario</p>
             </div>
 
             <form>
-                <div>
-                    <div>
-                        <div>
-                        <input type="text" class="Nombre" id="Nombre" required>
-                        <label>Nombre Completo</label>
+                <div class="container">
+                    <div class="col-12 mb-4" >
+                        <div class="form-floating">
+                            <input type="text" class="form-control border-primary border-opacity-25" id="numero" required>
+                            <label class="text-muted">Nombre Completo</label>
                         </div>
                     </div>
 
-                    <div>
-                        <div>
-                        <input type="number" class="RTN" id="RTN" required 
+                    <div class="col-12 mb-4">
+                        <div class="form-floating">
+                        <input type="number" class="form-control border-primary border-opacity-25" id="numero" id="RTN" required 
                         maxlength="14" minlength="14" >
-                        <label>RTN Institucional</label>
+                        <label class="text muted">RTN Institucional</label>
                         </div>
                     </div>
 
-                    <div>
-                        <div>
-                        <input type="email" class="correo" id="correo" required>
-                        <label>Correo electronico institucional</label>
+                    <div class="col-12 mb-4">
+                        <div class="form-floating">
+                        <input type="email" class="form-control border-primary border-opacity-25" id="numero" id="correo" required>
+                        <label class="text-muted">Correo electronico institucional</label>
                         </div>
                     </div>
 
-                    <div>
-                        <div>
-                        <input type="tel" class="telefono" id="telefono" required 
+                    <div class="col-12 mb-4">
+                        <div class="form-floating">
+                        <input type="tel"  class="form-control border-primary border-opacity-25" id="numero"  id="telefono" required 
                         minlength="11" max="11">
-                        <label>Telefono de Contacto</label>
+                        <label class="text-muted">Telefono de Contacto</label>
                         </div>
                     </div>
 
                     
-                    <div>
-                        <div>
-                        <select id="campo-form">
+                    <div class="col-12 col-md-6">
+                        <div class="form-floating">
+                        <select id="campo-form" class="form-select border-primary border-opacity-25">
                             <option disable selected>Seleccione</option>
                             <option>Comayagua</option>
                             <option>Francisco Morazan</option>
@@ -446,25 +458,31 @@
                             <option>Atlantida</option>
                             <option>San Pedro Sula</option>
                         </select>
-                        <label>Departamento de Entrega</label>
+                        <label class="text-muted">Departamento de Entrega</label>
                         </div>
                     </div>
+                    <br>
+                    
 
-                    <div>
-                        <input type="checkbox" id="garantia">
-                        <label>Acepto los terminos de garantia
-                             forestal de 5 años</label>
+                    <div class="col-12 col-md-6">
+                        <div>
+                            <input type="checkbox" id="garantia" >
+                            <label>Acepto los terminos de garantia
+                                 forestal de 5 años</label>
+                        </div>   
+                        <br>      
 
                     </div>
 
             </div>
                 </div>
                 <div>
-                    <button type="submit">Enviar Cotizacion</button>   
+                    <button type="submit" class="btn btn-secondary btn-lg rounded-pill fw-bold w-100 shadow">Enviar Cotizacion</button>   
                 </div>
+                <br>
 
                 <div>
-                    <button type="reset">Limpiar Formulario</button>
+                    <button type="reset " class="btn btn-secondary btn-lg rounded-pill fw-bold w-100 shadow">Limpiar Formulario</button>
                 </div>
                     
             </form>
@@ -473,17 +491,19 @@
     </div>
 </section>
 
+<br>
 
 
-<footer id="contacto">
-    <div>
+
+<footer id="contacto" class="py-5 mt-auto border-top bg-secondary text-light">
+    <div class="container">
         <div>
             <div>
-            <h4>Muebleria</h4>
+            <h4>Muebleria y Carpinteria Furniture </h4>
             </div>
         </div>
         <div>
-            <h3>Ubicacion:</h3>
+            <h5>Ubicacion:</h5>
             <p>Estamos Ubicados en en el KM 114, Carretera CA-5,
                 Siguatepeque-Tel: 2233-XXXX, sala de ventas en Tegucigalpa:
                 Blv.Morazan, Tegucigalpa-Tel:2225-XXXX.
@@ -495,15 +515,15 @@
             <h4 id="#Contactos">Contactos</h4>
             <ul>
                 
-                <li><img src=""><a>Numero</a></li>
-                <li><img src=""><a>Correo</a></li>
-                <li><img src=""><a>Instagram</a></li>
-                <li><img src=""><a>Facebook</a></li>
+                <li><img src=""><a>Telefono:</a>2223-XXXX</li>
+                <li><img src=""><a>Correo: </a>furniture@gmail.com</li>
+                <li><img src="ig.jpg" class="icono" width="25px" height="25px"><a href="https://www.instagram.com/" class="nav-link px-3 btn-primary text-light">Instagram</a></li>
+                <li><img src="facebook.png" class="icono" width="25px" height="25px"><a href="https://www.facebook.com/" class="nav-link px-3 btn-primary text-light" >Facebook</a></li>
             </ul>
         </div>
 
         <div>
-             Muebleria Honduras, Francisco Morazan.
+             Muebleria y Carpinteria Furniture, Francisco Morazan.
         </div>
     </div>
         
